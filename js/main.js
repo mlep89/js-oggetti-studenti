@@ -11,6 +11,7 @@ var studente = {
 
 for (var chiave in studente) {
     console.log(studente[chiave]);
+    document.getElementById("primo_es").innerHTML += " " + studente[chiave];
 }
 
 /* Creare un array di oggetti di studenti. Ciclare su tutti gli
@@ -50,6 +51,21 @@ var studenti = [
 ]
 
 for (var i = 0; i < studenti.length; i++) {
-    console.log(studenti[i]["nome"]);
-    console.log(studenti[i]["cognome"]);
+    document.getElementById("terzo_es").innerHTML += " " + studenti[i]["nome"] + studenti[i]["cognome"];
 }
+
+/* Dare la possibilità all’utente attraverso 3 prompt di
+aggiungere un nuovo oggetto studente inserendo
+nell’ordine: nome, cognome e età. */
+
+var tmp = {
+    nome : prompt("Inserisci il tuo nome"),
+    cognome : prompt("Inserisci il tuo cognome"),
+    eta : prompt("Inserisci la tua età"),
+}
+studenti.push(tmp);
+console.log(studenti);
+
+/*for (var chiave in studenti) {
+document.getElementById("terzo_es").innerHTML += studenti[chiave];
+}*/
