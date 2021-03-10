@@ -10,7 +10,7 @@ var studente = {
 }
 
 for (var chiave in studente) {
-    alert(studente[chiave]);
+    console.log(studente[chiave]);
 }
 
 /* Creare un array di oggetti di studenti. Ciclare su tutti gli
@@ -21,30 +21,35 @@ var studenti = [
         "nome" : "Marco",
         "cognome" : "Lepore",
         "eta" : "32"
-    }
+    },
     {
         "nome" : "Matteo",
         "cognome" : "Rossi",
         "eta" : "30"
-    }
+    },
     {
         "nome" : "Mario",
         "cognome" : "Bianchi",
         "eta" : "31"
-    }
+    },
     {
         "nome" : "Giuseppe",
         "cognome" : "Verdi",
         "eta" : "20"
-    }
+    },
     {
         "nome" : "Michele",
         "cognome" : "Gialli",
         "eta" : "33"
-    }
+    },
     {
         "nome" : "Fabio",
         "cognome" : "Forghieri",
         "eta" : "31"
     }
 ]
+
+for (var i = 0; i < studenti.length; i++) {
+    console.log(studenti[i]["nome"]);
+    console.log(studenti[i]["cognome"]);
+}
